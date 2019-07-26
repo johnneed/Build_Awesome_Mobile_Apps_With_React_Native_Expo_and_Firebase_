@@ -5,10 +5,9 @@ Assets, code samples, and super-awesome instructions for Code for BTV's mobile s
 
 ## Table of Contents
 Introduction: What, Who and Why
-   1. [What Is It We are Learning Here?](lesson-00_What-Who-And-Why/01-Exactly-What-Is-It-We-Are-Learning-Here.md)
-   2. [Who is Code for BTV?](lesson-00_What-Who-And-Why/02-Who-Is-Code-For-BTV.md)
-   3. [Why Should We Practice Civic Hacking](lesson-00_What-Who-And-Why/3-Why-Should-We-Practice-Civic-Hacking.md)
-
+   1. [What Are We Learning?](lesson-00_What-Who-And-Why/01-What-Are-We-Learning.md)
+   2. [Who Are We?](lesson-00_What-Who-And-Why/02-Who-Are-You.md)
+   3. [Why Should I Learn React Native, Expo and Firebase?](lesson-00_What-Who-And-Why/03-Why-Should-I-Learn-React-Native-Expo-and-Firebase.md)
 Lesson One: Getting Setup
    1. [Windows Setup (10 min)](lesson-01_Getting-Setup/01-Getting-Setup-On-Windows.md)
    2. [Mac Setup](lesson-01_Getting-Setup/02-Getting-Setup-On-Mac.md)
