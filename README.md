@@ -7,6 +7,7 @@ Assets, code samples, and super-awesome instructions for Code for BTV's mobile s
 Introduction: What and Why
    1. [What Are We Learning?](lesson-00_What-Who-And-Why/01-What-Are-We-Learning.md)
    2. [Why Should I Learn React Native, Expo and Firebase?](lesson-00_What-Who-And-Why/02-Why-Should-I-Learn-React-Native-Expo-and-Firebase.md)
+
 Lesson One: Getting Setup
    1. [Windows Setup (10 min)](lesson-01_Getting-Setup/01-Getting-Setup-On-Windows.md)
    2. [Mac Setup](lesson-01_Getting-Setup/02-Getting-Setup-On-Mac.md)
