@@ -28,7 +28,6 @@ Your data has to go somewhere.  Firebase is a "serverless" data service brought 
 
 
 What's so special about this stack?
-Code for BTV relies completely on volunteers to accomplish its mission of social and environmental justice.  We value our volunteers' time and respect the fact that our clients have limited expertise and meager budgets for server and software management.
-
+ 
 The delivery of high-quality, low-cost, easy-to-maintain solutions quickly, is a key requirement for our clients and the retention of our volunteer staff.  Expo and Reactive Native allow us to iterate and code with ease while Firebase allows us to offload a lot of the server management to the fine folks at Google.
 
