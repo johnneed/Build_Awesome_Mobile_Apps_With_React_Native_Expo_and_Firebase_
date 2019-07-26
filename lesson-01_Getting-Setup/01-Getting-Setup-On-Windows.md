@@ -1,7 +1,21 @@
 # Getting Setup on Windows
  These instructions are for Windows 10 - 64 bit.
 
-## Install Node
+## Install the Expo App on Your Phone
+One reason Expo is such a great development environment is that it makes it easy to run and debug your mobile right on your phone. The Expo phone app makes that super easy.  The app requires a free Expo account.  Head over to the Expo web-site and  sign up for a free account.
+
+1. Go to http://expo.io and click the "Create an account" button.
+
+    ![Alt](assets/mac/expo-website.png "Expo Website")
+
+2. Install the Expo Client app on your phone. Search for it in your app store and install it.  It's free!
+
+   ![Alt](assets/mac/app-store.jpg "Expo App in App Store")
+
+3. Launch the app and sign in using your Expo credentials. Your app in now linked to your account.
+
+
+## Install Node on Your Computer
 
 1. Download the Node installer here : https://nodejs.org/en/
 
@@ -27,7 +41,7 @@
 
 3. Click through the installer accepting all the default settings.
 
-4. Verify that Node  is installed by opening a terminal and typing
+4. Verify that Git is installed by opening a terminal and typing
     ```cmd
     git --version
     ```
@@ -41,6 +55,8 @@
     ```
 
 ## Install Python 2.7.15
+
+We don't need Python to develop our apps, but it is required to publish our apps to the app store.
 
 1. In the Command Prompt window, type the following and press Enter.
 
@@ -65,7 +81,7 @@
 4. Open the file to start the installation wizard.
 
     ![Alt](assets/windows/install-python.png "Python installer screen 1")
-    
+
 5. Click through the first screen to second and make a note of where Python is installed on your system.
 
     ![Alt](assets/windows/python-install-path.png "Python installer screen 2")
@@ -83,10 +99,54 @@
    ![Alt](assets/windows/environmental-variables-path.png "Environmental Variables Path")
 
 10. Select a new line and add the path you noted when you installed Python.  My path is "C:/Python27". Click OK to save this change. Click OK twice more to exit out of all the windows.
-   
+
     ![Alt](assets/windows/python-add-path.png "Python Path")
 
 11. Confirm that you've added Python to your Path variable. Open a new command prompt and re-run the original command: `python`
+
+
+## Install Firebase Tools
+
+Before you can use the Firebase tools you'll need a free account.
+
+1. Go to the Firebase website, https://firebase.google.com, and click the "Sign In" button. You'll be given the options of signing in or creating a new account.
+
+2. Now that you have a free Google Developers account install Firebase Tools :
+    ```bash
+    npm install -g firebase-tools
+    ```
+
+## Install Expo
+
+
+1. Install the expo development tools on your computer.
+    ```bash
+    npm install expo-cli --global
+    ```
+
+## Install Yarn    
+
+You may be used to using npm to install node dependencies.  Expo recommends using Yarn.  It just works better with Expo.
+
+1) In the terminal run 
+
+    ```bash
+    npm install -g yarn
+    ```
+
+## Install Visual Studio Code
+
+You can you use any old text editor to write your code, but we recommend you use an IDE (Integrated Development Environment) that supports JavaScript.  It will make your life a lot easier.  Because it's free and works on Mac, Linux and Windows, and is pretty darn good we will be using Visual Studio Code for this course.
+
+1. Download Visual Studio code by going to this website : https://code.visualstudio.com/download  Choose the .deb version and download it.
+
+    ![Alt](assets/linux/vbsc-website.png "Visual Studio Code Website")
+
+2. When the download is done, run the installer.
+
+
+As of now you have all the tools you need to start creating awesome mobile apps. However you may want to test different your app on different phones.  The easiest way to do that is to install an Android emulator.  
+Unfortunately you can't run iPhone emulators on anything but a Mac, but any code you write using Expo should run fine on iOS.  Continue with this tutorial to install the emulators.
 
 
 ## Install Android Studio
@@ -126,44 +186,20 @@ https://www.genymotion.com/fun-zone/
 6. Test your installation by choosing the virtual device you just installed and click the "Start" button. Your emulator should start.
 
     ![Alt](assets/mac/emulator.png "Genymotion Emulator")
-    
+
 7. If you see the following window, It means you have Hyper-V activated.  Genymotion is incompantable with Hyper-V so you'll need to turn it off.
 
     ![Alt](assets/windows/geny-6.PNG "error")
-    
+
 8. To deactivate Hyper-V open your control panel and select "Programs"
 
     ![Alt](assets/windows/hyper-v-1.PNG "hyper-v")
-    
+
 9. Under Programs and Features, select "Turn Windows features on of off"
 
     ![Alt](assets/windows/hyper-v-2.PNG "hyper-v")
-        
+
 10. Remove the checkbox from the Hyper-V option. Restart your computer and try running an emulator again.
 
     ![Alt](assets/windows/hyper-v-3.PNG "hyper-v ")
-            
-## Install Firebase Tools
 
-Before you can use the Firebase tools you'll need a free account.
-
-1. Go to the Firebase website, https://firebase.google.com, and click the "Sign In" button. You'll be given the options of signing in or creating a new account.
-
-2. Now that you have a free Google Developers account install Firebase Tools :
-    ```bash
-    npm install -g firebase-tools
-    ```
-    
-## Install Expo
-
-Before you can use Expo you need to sign up for a free account. You'll need the account to publish your app to the Expo repository.
-
-1. Go to http://expo.io and click the "Create an account" button.
-    ![Alt](assets/mac/expo-website.png "Expo Website")
-
-2. While you should have an Android emulator, there's no substitute for debugging on a real phone. To do this you'll need to install the Expo Client app on your iOS or Android phone. Search for it in your app store and install it.
-
-3. Now that you have an account and your phone is all set, install the expo development tools on your computer.
-    ```bash
-    npm install expo-cli --global
-    ```

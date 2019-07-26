@@ -1,1 +1,0 @@
-# Lesson Twelve : The Firebase Web SDK

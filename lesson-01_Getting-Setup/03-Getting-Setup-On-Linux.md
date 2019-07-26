@@ -1,7 +1,21 @@
 # Getting Setup on Linux:
 These instructions were written for Ubuntu 18.x
 
-## Install Node with NVM
+## Install the Expo App on Your Phone
+One reason Expo is such a great development environment is that it makes it easy to run and debug your mobile right on your phone. The Expo phone app makes that super easy.  The app requires a free Expo account.  Head over to the Expo web-site and  sign up for a free account.
+
+1. Go to http://expo.io and click the "Create an account" button.
+
+    ![Alt](assets/mac/expo-website.png "Expo Website")
+
+2. Install the Expo Client app on your phone. Search for it in your app store and install it.  It's free!
+
+   ![Alt](assets/mac/app-store.jpg "Expo App in App Store")
+
+3. Launch the app and sign in using your Expo credentials. Your app in now linked to your account.
+
+
+## Install Node with NVM on Your Computer
 The best way to install Node is with Node Version Manger (NVM). NVM allows you easily upgrade and switch between versions of Node.
 
 1. Download the NVM install script with this command:
@@ -20,7 +34,7 @@ The best way to install Node is with Node Version Manger (NVM). NVM allows you e
     ```bash
     source ~/.profile
     ```
-
+git 
 3. You can now list all the versions of Node available for installation:
     ```bash
     nvm ls-remote
@@ -48,7 +62,7 @@ The best way to install Node is with Node Version Manger (NVM). NVM allows you e
     `````
 
 ## Install and Configure Git
-
+ 
 1. Run the following command to install Git
     ```bash
     sudo apt update
@@ -62,6 +76,8 @@ The best way to install Node is with Node Version Manger (NVM). NVM allows you e
     ```
 
 ## Install Python 2.7.15
+
+We don't need Python to develop our apps, but it is required to publish our apps to the app store.
 
 1. In the Command Prompt window, type the following and press Enter.
     ```bash
@@ -79,6 +95,46 @@ The best way to install Node is with Node Version Manger (NVM). NVM allows you e
     ```bash
     sudo apt install python-minimal
     ```
+
+## Install Expo Development Tools
+ 
+1. Install the expo development tools on your computer.
+    ```bash
+    npm install expo-cli --global
+    ```
+
+## Install Yarn    
+
+You may be used to using npm to install node dependencies.  Expo recommends using Yarn.  It just works better with Expo.
+
+1) In the terminal run 
+    ```bash
+    npm install -g yarn
+    ```
+
+## Install Firebase Tools
+
+1. Before you can use the Firebase tools you'll need a free account. Go to the Firebase website, https://firebase.google.com, and click the "Sign In" button. You'll be given the options of signing in or creating a new account.
+
+    ![Alt](assets/linux/firebase-website.png "Firebase Website")
+
+2. Now that you have a free Google Developers account install Firebase Tools:
+    ```bash
+    npm install -g firebase-tools
+    ```
+
+## Install Visual Studio Code
+
+You can you use any old text editor to write your code, but we recommend  you use an IDE (Integrated Development Environment) that supports JavaScript.  It will make your life a lot easier.  Because it's free and works on Mac, Linux and Windows, and is pretty darn good we will be using Visual Studio Code for this course.
+
+1. Download Visual Studio code by going to this website : https://code.visualstudio.com/download  Choose the .deb version and download it.
+
+    ![Alt](assets/linux/vsc-website.png "Visual Studio Code Website")
+
+2. When the download is done, double-click the .deb file to open the file in the Ubuntu Software application. Then click the "install" button to start the installation process.
+
+    ![Alt](assets/linux/install-vsc.png "Visual Studio Code Install")
+
 
 ## Install Android Studio
 
@@ -135,78 +191,23 @@ Genymotion is the easiest way to get an Android emulator up and running. With Ex
     ```
 
 7. Download a virtual device by clicking the "+ Add" button, selecting a virtual device (Google Pixel is good choice)  and then clicking the "Next" button. You'll be prompted to rename the device if you so choose.
+
     ![Alt](assets/linux/select-new-virtual-device.png "Select New Virtual Device")
 
 
 8. After your new virtual device is finished installing, configure the ADB (Android Debugging Bridge)  in Genymotion to use the same SDK library as Android Studio. Click the "Settings" button on the main Genymotion screen and then click the "ADB" tab.
+
     ![Alt](assets/linux/adb-settings.png "ADB settings")
 
 9. Select the "Use custom Android SDK tools" and then browse the Android Sdk folder. The path (if you installed android studio locally) will be '/home/<your username>/Android/Sdk'. Choose this folder and click the "choose" button.
+
     ![Alt](assets/linux/sdk-path.png "SDK Path")
 
 
 10. Test your installation by choosing the virtual device you just installed and click the "Start" button. Your emulator should start.
+
     ![Alt](assets/linux/emulator.png Emulator")
 
-## Install Firebase Tools
 
-1. Before you can use the Firebase tools you'll need a free account. Go to the Firebase website, https://firebase.google.com, and click the "Sign In" button. You'll be given the options of signing in or creating a new account.
-    ![Alt](assets/linux/firebase-website.png "Firebase Website")
 
-2. Now that you have a free Google Developers account install Firebase Tools:
-    ```bash
-    npm install -g firebase-tools
-    ```
 
-## Install Expo
-
-Before you can use Expo you need to sign up for a free account. You'll need the account to publish your app to the Expo repository.
-
-1. Go to http://expo.io and click the "Create an account" button.
-    ![Alt](assets/linux/expo-website.png "Expo Website")
-
-2. While you should have an Android emulator, there's no substitute for debugging on a real phone. To do this you'll need to install the Expo Client app on your iOS or Android phone. Search for it in your app store and install it.
-
-3. Now that you have an account and your phone is all set, install the expo development tools on your computer.
-    ```bash
-    npm install expo-cli --global
-    ```
-
-## Taking Your New Development Environment for a Spin
-
-Let's create and run a test app to maker sure everything is working properly.
-
-1. In your terminal, navigate to a folder where you want to create you test app
-
-2. Run the command `expo init test-app` You should see some options for app templates
-    ![Alt](assets/linux/templates.png "Templates")
-
-3. Choose "blank"  this is only a test.
-
-4. When it's done, follow the direction on the screen to start the app.
-    ```bash
-    cd test-app
-    expo start
-    ```
-    ![Alt](assets/linux/expo-upc.png "Expo UPC")
-
-5. The development tools interface should pop up in your Chrome browser.
-    ![Alt](assets/linux/expo-dev-tools.png "Expo Developer Tools")
-
-6. Let's run the app in your Android emulator. Open Genymotion and start an emulator. Once it's started click the "Run on Android device/emulator" button in the left side of the screen.
-
-7. You should have a new virtual device so Expo will try to install the Expo Client App. This may take a while, but you can monitor the progress in the bundler console.
-    ![Alt](assets/linux/bundler-console.png "Bundler Console")
-
-8. When the Expo client is loaded, the emulator will prompt you for permission to "draw over other apps."  Click the "OK"
-button.
-    ![Alt](assets/linux/permissions.png "Permissions")
-
-9. Click the "Allow Display over other apps" toggle so it's on (green)
-    ![Alt](assets/linux/toggle.png "Toggle")
-
-10. Click the Back button on the right side to get back to your app.
-    ![Alt](assets/linux/back-button.png "Back Button")
-
-11. You should see your app building and then loading. When it's done, you should see this screen:
-    ![Alt](assets/linux/app.png "App")

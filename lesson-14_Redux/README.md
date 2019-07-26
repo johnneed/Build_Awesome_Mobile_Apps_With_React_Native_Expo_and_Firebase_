@@ -1,1 +1,7 @@
-# Lesson Fourteen : Redux
+# Lesson Fourteen: Redux (30 min)
+1. [Application State](01_Application-State.md)
+2. [The Redux Model](02_The-Flux-Model.md)
+3. [Installing Redux](03_Installing-Redux.md)
+4. [Reducers](04_Reducers.md)
+5. [Mapping App-State to Props](05_Mapping-App-State-to-Props.md)
+6. [Mapping Actions](06_Mapping-Actions.md)
