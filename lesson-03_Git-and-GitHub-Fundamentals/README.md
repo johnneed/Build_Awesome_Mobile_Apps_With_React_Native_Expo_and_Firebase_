@@ -1,8 +1,8 @@
 # Lesson Three: Git and GitHub Fundamentals
 
-Code for BTV uses Git for source control.  While you can build a mobile app without using Git, you can't contrubite your code if you don't know a few Git basics.
+We use Git for source control.  While you can build a mobile app without Git, Having source control will save you from the most common code disasters.   
 If you're already familiar with this stuff, feel free to skip this section. 
-There's a lot of Git and GitHub tutorials out there, so we'll only go over the Git skills you'll need to pull and contribute code.
+There's a lot of Git and GitHub tutorials out there, so we'll only go over the Git skills you'll need to pull and contribute code. If you want more info about Git, there's a great free book [Pro Git](https://git-scm.com/book/en/v2).  If you're interested learning more about GitHub, head over to the [GitHub Guides](https://guides.github.com/).
 
 To use GitHub you'll need a GitHub account; go to https://github.com/ and create one.  It's free!
 
