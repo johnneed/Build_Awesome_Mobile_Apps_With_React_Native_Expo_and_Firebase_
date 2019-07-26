@@ -1,7 +1,7 @@
 # Exactly What are We Learning Here?
 
 
-The short answer:  the tech stack used by Code for BTV to build no-fuss mobile apps fast.
+The short answer:  An awesome tech stack to build no-fuss mobile apps fast.
 
 The shorter answer:  React Native, Expo & Firebase
 
