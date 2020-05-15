@@ -138,7 +138,7 @@ You may be used to using npm to install node dependencies.  Expo recommends usin
 
 You can you use any old text editor to write your code, but we recommend you use an IDE (Integrated Development Environment) that supports JavaScript.  It will make your life a lot easier.  Because it's free and works on Mac, Linux and Windows, and is pretty darn good we will be using Visual Studio Code for this course.
 
-1. Download Visual Studio code by going to this website : https://code.visualstudio.com/download  Choose the .deb version and download it.
+1. Download Visual Studio code by going to this website : https://code.visualstudio.com/download  Choose the Windows version and download it.
 
     ![Alt](assets/linux/vbsc-website.png "Visual Studio Code Website")
 
